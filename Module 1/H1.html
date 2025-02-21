@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Menu Builder</title>
+    <style>
+        nav {
+            background: #eee;
+            padding: 10px;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .submenu {
+            display: none;
+            margin-left: 15px;
+        }
+        .active {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="mainMenu"></nav>
+
+    <div class="content" style="margin-left: 220px; padding: 10px;">
+        <h1 id="h1-1">Hoofdstuk 1</h1>
+        <h2 id="h2-1-1">Deel 1.1</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        <h2 id="h2-1-2">Deel 1.2</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur praesentium cupiditate tempore quae excepturi, quam beatae quas, sed dicta quibusdam eligendi earum ipsum et unde iste harum inventore accusantium! Ipsum!
+        <h1 id="h1-2">Hoofdstuk 2</h1>
+        <h2 id="h2-2-1">Deel 2.1</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum perspiciatis omnis officiis eligendi amet consectetur tenetur soluta cum est, architecto delectus excepturi cumque, eveniet deserunt mollitia beatae aut repellendus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur esse porro dignissimos voluptatem sequi, harum architecto debitis reiciendis cupiditate, distinctio incidunt nihil animi repellendus officiis nisi inventore voluptas deleniti totam!
+    </div>
+
+    <script src="H1.js"></script>
+
+</body>
+</html>
