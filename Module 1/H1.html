@@ -3,7 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXT verhaal </title>
+    <title>Dynamic Menu Builder</title>
+    <style>
+        nav {
+            background: #eee;
+            padding: 10px;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .submenu {
+            display: none;
+            margin-left: 15px;
+        }
+        .active {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
 
