@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        #scoreCalculator {
+            max-width: 300px;
+            padding: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: 100%;
+            margin: 8px 0;
+            padding: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #e3e3e3;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scoreCalculator">
+        <input type="number" id="score" placeholder="Voer score in (0-20)">
+        <button id="addScore">Voeg Score Toe</button>
+        
+        <div id="stats">
+            <p>Gemiddelde score: <span id="average">0</span></p>
+            <p>Hoogste score: <span id="highest">0</span></p>
+        </div>
+        
+        <ul id="scoreList"></ul>
+    </div>
+
+    <script src="E1.js"></script>
+
+</body>
+</html>
