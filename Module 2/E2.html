@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept generator</title>
+    <style>
+  body {
+    background: #f4f9f4;
+    font-family: Arial, sans-serif;
+    text-align: right;
+}
+
+#recipeCard {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #2c786c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e5f56;
+}
+    </style>
+</head>
+<body>
+    <div id="recipeCard">
+        <input type="text" id="recipeName" placeholder="Naam van het recept">
+        <input type="number" id="prepTime" placeholder="Bereidingstijd (minuten)">
+        <textarea id="ingredients" placeholder="Ingrediënten (1 per regel)"></textarea>
+        <button id="generateCard">Genereer Recept Kaart</button>
+        
+        <div id="result"></div>
+    </div>
+    <script src="E2.js"></script>
+</body>
+</html>
