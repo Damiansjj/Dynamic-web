@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Formatter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .output {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Social Media Formatter</h1>
+    <textarea id="inputText">Dit is een veel te lang bericht voor sociale media</textarea>
+    <button onclick="formatText()">Formateer</button>
+    <div class="output" id="tweetOutput">Tweet verschijnt hier...</div>
+    <div class="output" id="postOutput">Post verschijnt hier...</div>
+    <div class="output" id="comboOutput">Gecombineerd bericht verschijnt hier...</div>
+    
+    <script>
+        const formatText = () => {
+            let text = document.getElementById("inputText").value;
+            let tweet = text.length > 280 ? text.slice(0, 277) + "..." : text;
+            let post = text.length > 1000 ? text.slice(0, 997) + "..." : text;
+            let combo = `Tweet: ${tweet}\nPost: ${post}`;
+
+            document.getElementById("tweetOutput").innerText = tweet;
+            document.getElementById("postOutput").innerText = post;
+            document.getElementById("comboOutput").innerText = combo;
+        };
+    </script>
+    <script src="M1.mjs"></script>
+</body>
+</html>
