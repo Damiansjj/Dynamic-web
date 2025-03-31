@@ -7,7 +7,7 @@ document.getElementById("clickButton").addEventListener("click", () => {
 
 async function wachtOpVijfClicks() {
   while (teller < 5) {
-    await new Promise(resolve => setTimeout(resolve, 100)); // Wacht totdat de teller 5 is
+    await new Promise(resolve => setTimeout(resolve, 100)); 
   }
   document.querySelector(".message").textContent = "Gefeliciteerd! Je hebt 5 keer geklikt!";
 }

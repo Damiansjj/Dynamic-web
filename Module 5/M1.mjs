@@ -13,19 +13,18 @@ function loadImages() {
   const progressBar = document.querySelector(".progress-bar");
   const gallery = document.querySelector(".gallery");
 
-  // Reset de galerij en voortgangsbalk voor elke nieuwe poging
   gallery.innerHTML = '';
   progressBar.style.width = '0%';
   progressBar.textContent = '0%';
 
-  // Laad elke afbeelding één voor één
+  
   images.reduce((promise, imageUrl, index) => {
     return promise.then(() => {
       return loadImage(imageUrl).then(img => {
-        gallery.appendChild(img); // Voeg afbeelding toe aan galerij
-        progress += 33.33; // Aangezien we 3 afbeeldingen hebben, wordt elke afbeelding 33.33% van de voortgang
-        progressBar.style.width = `${progress}%`; // Update de voortgangsbalk
-        progressBar.textContent = `${Math.round(progress)}%`; // Toon percentage in de voortgangsbalk
+        gallery.appendChild(img); 
+        progress += 33.33; 
+        progressBar.style.width = `${progress}%`; 
+        progressBar.textContent = `${Math.round(progress)}%`; 
       });
     });
   }, Promise.resolve()).then(() => {
@@ -33,12 +32,12 @@ function loadImages() {
   });
 }
 
-// Functie om de afbeelding te laden
+
 function loadImage(imageUrl) {
   return new Promise((resolve) => {
     const img = new Image();
     img.src = imageUrl;
-    img.onload = () => resolve(img); // Wanneer de afbeelding geladen is, resolve de Promise
-    img.onerror = () => console.error('Fout bij het laden van de afbeelding: ' + imageUrl); // Foutafhandelaar
+    img.onload = () => resolve(img); 
+    img.onerror = () => console.error('Fout bij het laden van de afbeelding: ' + imageUrl); 
   });
 }
