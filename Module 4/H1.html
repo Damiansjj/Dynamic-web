@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Cursusplatform</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .tabs { display: flex; margin-bottom: 20px; }
+    .tab { padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; }
+    .tab.active { background-color: #f1f1f1; font-weight: bold; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .course-list, .student-list, .teacher-list, .enrollment-list { margin-top: 20px; }
+    table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+    th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
+  </style>
+</head>
+<body>
+
+  <h1>Online Cursusplatform</h1>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="courses">Cursussen</div>
+    <div class="tab" data-tab="students">Studenten</div>
+    <div class="tab" data-tab="teachers">Docenten</div>
+    <div class="tab" data-tab="enrollments">Inschrijvingen</div>
+  </div>
+
+  <div class="tab-content active" id="courses">
+    <h2>Beschikbare Cursussen</h2>
+    <div class="course-list" id="course-list"></div>
+  </div>
+
+  <div class="tab-content" id="students">
+    <h2>Studenten</h2>
+    <div class="student-list" id="student-list"></div>
+  </div>
+
+  <div class="tab-content" id="teachers">
+    <h2>Docenten</h2>
+    <div class="teacher-list" id="teacher-list"></div>
+  </div>
+
+  <div class="tab-content" id="enrollments">
+    <h2>Inschrijvingen</h2>
+    <div class="enrollment-list" id="enrollment-list"></div>
+  </div>
+
+  <script src="H1.mjs"></script>
+</body>
+</html>
