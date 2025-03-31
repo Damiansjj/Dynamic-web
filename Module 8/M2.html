@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .dashboard-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        .dashboard[data-columns="1"] {
+            grid-template-columns: 1fr;
+        }
+        .dashboard[data-columns="2"] {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .info-panel {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f7fe;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Dashboard</h1>
+    <p>Probeer de grootte van de container te wijzigen door je browser window te verkleinen of het handvat rechts te gebruiken.</p>
+    
+    <div class="dashboard-container" id="container">
+        <div class="dashboard" id="dashboard" data-columns="3">
+            <div class="card">
+                <h2>Kaart 1</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 2</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 3</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 4</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 5</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+            <div class="card">
+                <h2>Kaart 6</h2>
+                <p>Dashboard informatie hier...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-panel">
+        <p>Huidige breedte: <span id="current-width">-</span>px</p>
+        <p>Aantal kolommen: <span id="column-count">3</span></p>
+    </div>
+
+    <script src="M2.mjs"></script>
+</body>
+</html>
